@@ -1,0 +1,12 @@
+<?php
+/**
+ * @var $block \LeSite\CustomBar\Block
+ */
+?>
+<?php if ($block->isModuleEnabled()): ?>
+  <div class="topbar">
+    <div class="top-container">
+      <span class="topbar-info"><?php echo 'Customer Group is: ' . $block->getCustomerGroup();  ?></span>
+    </div>
+  </div>
+<?php endif; ?>
